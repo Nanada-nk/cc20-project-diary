@@ -37,6 +37,7 @@ function PostItem({ item }) {
       fetch(`http://localhost:8989/posts/${id}`, {
         method: "DELETE",
       });
+      actionFetchPost()
     } catch (error) {
       console.log("error", error);
     }
